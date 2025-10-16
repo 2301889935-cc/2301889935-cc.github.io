@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>在线猜数字游戏</title>
+    <link rel="stylesheet" href="style.css"> <!-- 引入CSS样式 -->
+</head>
+<body>
+    <div class="game-container">
+        <h1>猜数字小游戏 🎮</h1>
+        <p>我想了一个1-100之间的数字，你能猜对吗？</p>
+        
+        <div class="input-area">
+            <input type="number" id="guessInput" placeholder="输入你猜的数字" min="1" max="100">
+            <button onclick="checkGuess()">猜！</button>
+        </div>
+        
+        <div class="result">
+            <p id="tip">开始猜吧！</p> <!-- 提示“大了/小了” -->
+            <p>猜测次数：<span id="count">0</span></p> <!-- 记录次数 -->
+        </div>
+        
+        <button onclick="resetGame()">重新开始</button> <!-- 重置按钮 -->
+    </div>
+
+    <script src="script.js"></script> <!-- 引入JS逻辑 -->
+</body>
+</html>
